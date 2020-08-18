@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"alwaysStrict": true,
+		"lib": [
+			"dom",
+			"ES2015"
+		],
+		"module": "ES2015",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"outDir": "../assets/js/",
+		"sourceMap": false,
+		"strict": false,
+		"strictNullChecks": true,
+		"target": "es5"
+	},
+	"exclude": [
+		"node_modules"
+	]
+}

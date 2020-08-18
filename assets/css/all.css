@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@250;350;450;550;650;750&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+/*! This file is generated automatically.  Do not edit it! */
+:root {
+  --body-font: "Roboto Slab";
+  --header-font: "Roboto";
+  --weight-normal: 350;
+  --weight-light: calc(var(--weight-normal) - 100);
+  --weight-boldish: calc(var(--weight-normal) + 100);
+  --weight-bold: calc(var(--weight-normal) + 200);
+  --weight-heavy: calc(var(--weight-normal) + 300);
+  --cadence: 1.75rem;
+  --cadence-half: calc(var(--cadence) * 0.5);
+  --cadence-quarter: calc(var(--cadence) * 0.25);
+  --cadence-double: calc(var(--cadence) * 2);
+  --cadence-negative: calc(-1 * var(--cadence));
+  --cadence-half-negative: calc(-1 * var(--cadence-half));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, blockquote, ul, li, ol, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-indent: 0;
+}
+
+body {
+  max-width: 60em;
+  margin: 0 auto;
+  line-height: var(--cadence);
+}
+
+.site-header {
+  padding: var(--cadence-half) var(--cadence);
+  width: 100%;
+  min-height: var(--cadence-double);
+  display: grid;
+  grid-template-columns: [name] min-content [tagline] auto;
+}
+
+.project-name {
+  margin: var(--cadence-half) var(--cadence-double) var(--cadence-half) 0;
+  padding-right: var(--cadence-double);
+  grid-area: name;
+  line-height: var(--cadence-double);
+  min-height: var(--cadence-double);
+  display: flex;
+  align-items: center;
+}
+
+.project-tagline {
+  margin: var(--cadence-half) 0;
+  min-height: var(--cadence-double);
+  line-height: var(--cadence);
+  grid-area: tagline;
+  display: flex;
+  align-items: center;
+}
+
+#page {
+  padding: var(--cadence);
+}
+
+.site-footer {
+  text-align: right;
+  margin-top: var(--cadence-double);
+  padding: var(--cadence);
+}
+
+ul, ol {
+  padding-left: var(--cadence);
+}
+
+h1, h2, h3, h4, h5, h6, blockquote, ul, li, ol, dl, dt, dd {
+  margin: var(--cadence) 0;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, blockquote:first-child, ul:first-child, li:first-child, ol:first-child, dl:first-child, dt:first-child, dd:first-child {
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  min-height: var(--cadence-double);
+  line-height: var(--cadence-double);
+}
+
+h1, h2 {
+  margin-top: var(--cadence-double);
+}
+
+html {
+  background-color: #333;
+}
+
+body {
+  font-family: "Roboto Slab", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: var(--weight-normal);
+  font-size: 120%;
+  color: #222;
+  background-color: white;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+  font-weight: 450;
+}
+a:visited {
+  color: #007300;
+}
+a:focus, a:hover {
+  color: #00a600;
+  background-color: rgba(0, 128, 0, 0.1);
+  text-decoration: underline;
+}
+
+strong, b {
+  font-weight: 450;
+}
+
+.project-name {
+  text-transform: capitalize;
+  font-weight: var(--weight-light);
+  letter-spacing: 0.04em;
+  font-size: 3rem;
+}
+
+.project-tagline {
+  font-size: calc(0.75 * var(--cadence));
+  font-weight: var(--weight-light);
+}
+
+.site-header {
+  color: white;
+  background-color: green;
+  background-image: linear-gradient(0, #00a600, #007300);
+}
+
+.site-footer {
+  font-size: 90%;
+  background-color: green;
+  background-image: linear-gradient(180deg, #00a600, #007300);
+}
+.site-footer, .site-footer a {
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*! This file is generated automatically.  Do not edit it! */

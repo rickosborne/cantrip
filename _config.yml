@@ -1,15 +1,35 @@
+# You MUST change these settings to your own.
+repository: rickosborne/cantrip
+site:
+  title: My TTRPG Module
+  description: An adventure for 1000+ players in an Example setting, using the Example RPG system.
+
+# The following settings are safe to change.
+include:
+  - LICENSE.md             # By default, Markdown files in the root are ignored.  Which is weird.
+theme: jekyll-theme-cayman # This will be ignored unless you really want it to be used.
+show_downloads: false      # You might want this once you get PDF automation working.
+
+# You can add to these if you want, but you probably shouldn't remove anything.
+exclude:                   # These should be ignored by Jekyll and not published as HTML
+  - '.idea/workspace.xml'  # IntelliJ editor project
+  - '*.iml'                # Same ^^^
+  - 'node_modules/*'       # Third-party Javascript sources
+  - '_cantrip/*'           # These get compiled by other processes
+  - 'package.json'         # Configuration
+  - 'package-lock.json'    # Configuration
+  - '.gitignore'           # Configuration
+  - 'Gemfile'              # Needed by Jekyll ... but not ignored by Jekyll.  Which is odd.
+  - 'Gemfile.lock'         # Same ^^^
+  - 'assets/scss/work.scss'       # Processed by Sass, and not used directly by Jekyll.
+  - 'assets/scss/settings.scss'   # Same ^^^
+  - 'assets/scss/cantrip.scss'    # Same ^^^
+  - 'assets/scss/all.scss'        # Same ^^^
+
+# The rest of these probably should not be changed unless you really know what you're doing.
 plugins:
   - jekyll-relative-links
 relative_links:
   enabled: true
   collections: true
-exclude:
-  - '.idea/workspace.xml'
-  - 'node_modules/*'
-include:
-  - LICENSE.md
-
-theme: jekyll-theme-cayman
-
-show_downloads: false
 markdown: kramdown

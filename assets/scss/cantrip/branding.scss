@@ -1,0 +1,68 @@
+// Branding rules.
+// In general, this will be fonts, colors, and other "pretty" things.
+
+@use "../settings";
+
+html {
+  background-color: #333;
+}
+
+body {
+  font-family: settings.$body-font, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: var(--weight-normal);
+  font-size: 120%;
+  color: #222;
+  background-color: white;
+}
+
+a {
+  color: settings.$color-primary;
+  text-decoration: none;
+  font-weight: settings.$weight-bold;
+
+  &:visited {
+    color: settings.$color-primary-darker-10;
+  }
+
+  &:focus, &:hover {
+    color: settings.$color-primary-lighter-10;
+    background-color: settings.$color-primary-alpha-10;
+    text-decoration: underline;
+  }
+}
+
+strong, b {
+  font-weight: settings.$weight-bold;
+}
+
+.project-name {
+  text-transform: capitalize;
+  font-weight: var(--weight-light);
+  letter-spacing: 0.04em;
+  font-size: 3rem;
+}
+
+.project-tagline {
+  font-size: calc(0.75 * var(--cadence));
+  font-weight: var(--weight-light);
+}
+
+.site-header {
+  color: settings.$color-primary-invert;
+  background-color: settings.$color-primary;
+  background-image: linear-gradient(0, settings.$color-primary-lighter-10, settings.$color-primary-darker-10);
+}
+
+.site-footer {
+  font-size: 90%;
+  background-color: settings.$color-primary;
+  background-image: linear-gradient(180deg, settings.$color-primary-lighter-10, settings.$color-primary-darker-10);
+
+  &, & a {
+    color: settings.$color-primary-invert;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: settings.$header-font, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

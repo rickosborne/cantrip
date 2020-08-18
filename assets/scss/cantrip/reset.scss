@@ -1,0 +1,36 @@
+// Resets.
+// In general, these rules get all browsers to a common baseline.
+// You should never see class-based rules in here, only tags.
+
+// This file contains all of Cantrip's foundation styles.
+// You probably don't want to edit them.
+// Your changes should go in `/assets/css/work.scss`.
+
+@use "../settings";
+
+:root {
+  --body-font: "#{settings.$body-font}";
+  --header-font: "#{settings.$header-font}";
+  --weight-normal: #{settings.$weight-normal};
+  --weight-light: calc(var(--weight-normal) - 100);
+  --weight-boldish: calc(var(--weight-normal) + 100);
+  --weight-bold: calc(var(--weight-normal) + 200);
+  --weight-heavy: calc(var(--weight-normal) + 300);
+  --cadence: #{settings.$cadence};
+  --cadence-half: calc(var(--cadence) * 0.5);
+  --cadence-quarter: calc(var(--cadence) * 0.25);
+  --cadence-double: calc(var(--cadence) * 2);
+  --cadence-negative: calc(-1 * var(--cadence));
+  --cadence-half-negative: calc(-1 * var(--cadence-half));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, blockquote, ul, li, ol, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-indent: 0;
+}

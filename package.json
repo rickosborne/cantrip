@@ -1,0 +1,23 @@
+{
+	"author": {
+		"name": "YOUR NAME HERE"
+	},
+	"description": "YOUR DESCRIPTION HERE",
+	"devDependencies": {
+		"@types/node": "^14.0.23",
+		"ts-node": "^8.10.2",
+		"typescript": "^3.9.7"
+	},
+	"homepage": "https://YOUR GITHUB USERNAME.github.io/YOUR PROJECT NAME",
+	"license": "CC-BY-NC-SA-4.0",
+	"name": "yourprojectname",
+	"private": true,
+	"repository": "github:YOUR GITHUB USERNAME/YOUR PROJECT NAME",
+	"scripts": {
+		"css": "sass --watch --no-source-map --no-quiet assets/scss/all.scss:assets/css/all.css",
+		"html": "bundle exec jekyll serve --livereload --source . --destination ./_site --safe --incremental",
+		"js": "tsc --project _cantrip/tsconfig.json --watch",
+		"start": "npm run css & npm run js & npm run html"
+	},
+	"version": "1.0.0-pre"
+}
