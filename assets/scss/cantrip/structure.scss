@@ -47,20 +47,20 @@ body {
 }
 
 ul, ol {
-  padding-left: var(--cadence);
+  padding-left: var(--cadence-double);
 }
 
 h1, h2, h3, h4, h5, h6, blockquote, ul, li, ol, dl, dt, dd {
   margin: var(--cadence) 0;
-
-  &:first-child {
-    margin-top: 0;
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   min-height: var(--cadence-double);
   line-height: var(--cadence-double);
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 h1, h2 {
