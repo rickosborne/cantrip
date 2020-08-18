@@ -62,6 +62,9 @@ Here are a few options:
   * [Dart Sass explanation](https://sass-lang.com/dart-sass)
   * [Sass installation instructions](https://sass-lang.com/install) — Careful!  Even though you're working with NodeJS, you _don't_ want the Node/npm version of Sass.  It's too slow!  You want Dart Sass, trust me.
 3. Fork the [Cantrip repository](https://github.com/rickosborne/cantrip/).
+  * If you already have an existing repo and don't want to fork Cantrip, you'll need to copy over all the files to your repo.
+    You'll likely need to do some integrating with `package.json` and `_config.yml` if you already have them.
+    The rest should be pretty straightforward.
 4. Update the following files:
   * `package.json` — Add your name, your project's name, and update the URLs.
   * `_config.yml` — Update the repository and site information at the top of the file.
